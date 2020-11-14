@@ -1,4 +1,5 @@
 class User {
+
     constructor() {
         this.firstName = prompt("Input your first name");
         this.lastName = prompt("Input your last name");
