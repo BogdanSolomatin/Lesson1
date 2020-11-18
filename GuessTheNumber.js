@@ -5,11 +5,11 @@ let flag = false;
 
 do {
     limit--;
-    flag = check(prompt('Input the number'),right,more,less);
+    flag = check(prompt('Input the number'), right, more, less);
     if(flag) break;
 } while (limit > 0);
 
-if(limit == 0)  alert('You have not guessed the number for a given number of attempts');
+if (limit === 0)  alert('You have not guessed the number for a given number of attempts');
 
 function check (ans, rightAns, moreThan, lessThan) {
     return ans == DIGIT ? rightAns() : ans > DIGIT ? moreThan() : lessThan();
