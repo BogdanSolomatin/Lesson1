@@ -6,7 +6,10 @@ let flag = false;
 do {
     limit--;
     flag = check(prompt('Input the number'),right,more,less);
-    if(flag) break;
+    if(flag) {
+        alert('You have not guessed the number for a given number of attempts');
+        break;
+    }
 } while (limit > 0);
 
 if(limit == 0)  alert('You have not guessed the number for a given number of attempts');
