@@ -10,7 +10,7 @@ for (let key in firstCity) {
 thirdCity.name = 'Magnitogorsk';
 thirdCity.established = new Date(2020, 12, 30);
 fourthCity.name = 'Dortmund';
-thirdCity.established = new Date(1999, 5, 15);
+fourthCity.established = new Date(1999, 5, 15);
 
 const showAllCitiesInformation = function() { return this.info(); }
 
