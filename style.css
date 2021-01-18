@@ -1,0 +1,45 @@
+body {
+    background : #4169E1;
+}
+
+p {
+    color : floralwhite;
+    font-family: "Comic Sans MS";
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+li::before {
+    content: "• ";
+}
+
+.default {
+    color:  #ffc5b3;
+    font-family: "Comic Sans MS";
+}
+
+.extend {
+    font-size: 150%;
+    font-family: "Comic Sans MS";
+}
+
+.ultimate {
+    font-size: 180%;
+    color: #ff5a26;
+    font-family: "Comic Sans MS";
+}
+
+table,
+td {
+    border: 1px solid #333;
+}
