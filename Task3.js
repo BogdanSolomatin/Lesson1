@@ -1,6 +1,6 @@
 let header = ['Items', 'a or Id', 'b or Class', 'c or Tag', 'total'];
 let values = ['table.forum tr:hover p (0,2,3)', '#catalog .col3 .height div(1,2,1)', 'a.new > #newOrder > span:visited(1,2,2)',
-    '.menu ul li:last-child(0,2,2)', '#content.three-col(1,1,0)', 'h1 + .block_title(0,1,1)', '#newPage h2.#lastHeader > span.smallFont(2,1,2)'];
+    '.menu ul li:last-child(0,2,2)', '#content.three-col(1,1,0)', 'h1 + .block_title(0,1,1)', '#newPage h2#lastHeader > span.smallFont(2,1,2)'];
 let objects = [];
 
 
@@ -16,7 +16,7 @@ function createObjects() {
     for (let i = 0; i < values.length; i++) {
         let res = getRes(values[i]);
         let item = {name : values[i], a : Number(res.split(',')[0]), b : Number(res.split(',')[1]), c : Number(res.split(',')[2]),
-            total : Number(res.split(',')[0]) + Number(res.split(',')[1]) + Number(res.split(',')[2])};
+            total : Number(res.split(',')[0]) * 100 + Number(res.split(',')[1]) * 10 + Number(res.split(',')[2])};
         objects.push(item);
     }
 
